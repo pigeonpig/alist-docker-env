@@ -17,8 +17,8 @@ cat >/data/config.json <<EOF
     "password": "$DB_PASS",
     "name": "$DB_NAME",
     "db_file": "data/data.db",
-    "table_prefix": "alist_",
-    "ssl_mode": ""
+    "table_prefix": "x_",
+    "ssl_mode": "true"
   },
   "scheme": {
     "https": false,
@@ -40,6 +40,6 @@ cat >/data/config.json <<EOF
 }
 EOF
 
+ls -a && ls /data &&
 ./alist -conf data/config.json &
-ls -a && ls /data
 
