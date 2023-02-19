@@ -40,4 +40,5 @@ cat >/data/config.json <<EOF
 }
 EOF
 
-./alist server
+#./alist server
+ls -a
