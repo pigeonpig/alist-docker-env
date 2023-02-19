@@ -4,15 +4,15 @@ cat >/data/config.json <<EOF
 {
   "force": false,
   "address": "0.0.0.0",
-  "port": $PORT,
+  "port": 5244,
   "site_url": "",
   "cdn": "",
-  "jwt_secret": "ayCQMFS5kUG1WCoi",
+  "jwt_secret": "b0FVyBxWfToZXkej",
   "token_expires_in": 48,
   "database": {
     "type": "$DB_TYPE",
     "host": "$DB_HOST",
-    "port": "$DB_PORT",
+    "port": $DB_PORT,
     "user": "$DB_USER",
     "password": "$DB_PASS",
     "name": "$DB_NAME",
