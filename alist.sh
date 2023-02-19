@@ -1,6 +1,4 @@
-mkdir -p /data/
-
-cat >/data/config.json <<EOF
+cat >/opt/alist/data/config.json <<EOF
 {
   "force": false,
   "address": "0.0.0.0",
@@ -40,5 +38,4 @@ cat >/data/config.json <<EOF
 }
 EOF
 
-#./alist server
-ls -a
+alist admin
