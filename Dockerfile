@@ -1,8 +1,9 @@
 FROM xhofe/alist:latest
 LABEL MAINTAINER="i@nn.ci"
 
-ADD alist.sh /alist.sh
-RUN ls -a && ./alist admin
-RUN chmod +x /alist.sh
+RUN mkdir /home/ && mkdir /home/data/
+ADD alist.sh /home/alist.sh
+ADD alist /home/alist
+RUN chmod u+x /home/alist.sh
 
 CMD /alist.sh
