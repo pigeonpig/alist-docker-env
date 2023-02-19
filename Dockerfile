@@ -6,4 +6,4 @@ ADD alist /alist
 RUN chmod u+x /alist.sh
 RUN alist.sh
 
-CMD ./alist.sh
+CMD /alist.sh
